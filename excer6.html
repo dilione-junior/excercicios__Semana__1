@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercicio 6</title>
+</head>
+<body>
+    <script>
+        function mostra(frase){
+            document.write(frase)
+            document.write("<br><br>")
+        }
+            let baseRetangulo = 10
+            let alturaRetangulo = 2
+
+            let raioCirculo = 5
+
+            let baseTriangulo = 8
+            let alturaTriangulo = 5
+
+            let areaRetangulo = baseRetangulo * alturaRetangulo
+            let areaCirculo = Math.round(Math.PI * Math.pow(raioCirculo, 2))
+            let areaTriangulo = (baseTriangulo * alturaTriangulo) /2
+
+                mostra("A area do círculo é "+ areaCirculo)
+                mostra("A area do retângulo é " + areaRetangulo)
+                mostra("A area do triângulo é " + areaTriangulo)
+    </script>
+</body>
+</html>

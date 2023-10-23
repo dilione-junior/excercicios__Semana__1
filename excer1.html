@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercicio 1</title>
+</head>
+<body>
+    <script>
+        
+        function mostra(frase){
+    document.write(frase)
+    document.write("<br>")
+    }
+    var nome = prompt("Qual o seu nome?");
+    var telefone = prompt("Qual o seu telefone?");
+    var possuiConvenio = prompt("É optante do convênio? Responda sim ou não em letras minusculas")
+    var profissao = prompt("Qual a sua profissão?");
+    var salario = parseInt(prompt("Qual o valor do seu salario?")).toFixed(2);
+
+    var profissional = ("O funcionario " + nome + " , atualizou seu numero de contato para " + telefone + " , em seguida ele solicitou o status do convênio para " + possuiConvenio + " , mantendo sua função como " + profissao + " , com o salario de " + salario + "R$");
+    var optante = ("sim");
+    var naoOptante = ("nao");
+
+    function aderirConvenio (){
+        if(possuiConvenio == optante) {
+            mostra ("Optante")
+        } 
+        if (possuiConvenio == naoOptante) {
+            mostra ("Não Optante")
+        }   
+    }
+    mostra (profissional);
+
+    </script>
+</body>
+</html>
